@@ -2,3 +2,24 @@ Piyush bhandari
 Harsh Sawant 
 Krrish Naik 
 Shravani Dalvi
+
+
+hint for unit convertor
+    first change the value to standard value
+    (example: let's assume 'gram' as standard unit)
+
+    therefore, depending upon the 'from' unit convert it accordingly 
+    (if the from unit was kilogram then multiply it by 1000[cuz 1kg = 1000mg])
+
+    now change the value to the 'to' unit by multiplying it w.r.t. gram 
+    (example if the to unit was milligram then multiply the value by 1000 [cuz 1 gram = 1000mg] )
+
+    that's the conversion value
+
+    benefit of converting it to the standard value would be that you dont have to make conversion
+    for every unit manually like [mg to gram; mg to kilogram; mg to ton;
+                                  gram to mg; gram to kilogram; gram to ton; and the list goes on]
+
+    instead we just have to change every unit to gram and gram to every unit
+
+    [common sense though note that to go from gram to mg you'd have to divide gm by 1000]
