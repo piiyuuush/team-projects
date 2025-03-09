@@ -104,7 +104,28 @@ def time_conversion():
         print("Invalid Choice")
 
 
-# make function for temperature conversion from : between celcius, farhaniet
+# make function for temperature conversion from : between celcius, fahrenheit, kelvin
+def temp_conversion():
+    from_unit = input("Enter 'from' unit (celcius,fahrenheit,kelvin) :")
+    to_unit = input("Enter 'to' unit (celcius,fahrenheit,kelvin) : ")
+    value = int(input("Enter the value : "))
+    if from_unit == "fahrenheit":
+        value = (value - 32) * 5/9
+    elif from_unit == "kelvin":
+        value -= 273.15
+    elif from_unit == "celcius":
+        pass
+    else:
+        print("Invalid 'from' unit.")
+    if (to_unit.strip()).lower()=="fahrenheit":
+        value = (value * 9/5) + 32
+    elif (to_unit.strip()).lower()=="kelvin":
+        value += 273.15
+    elif (to_unit.strip()).lower()=="celcius":
+        pass
+    else:
+        print("Invalid 'to' unit.")
+    print(f"Value is {value} {to_unit} \n ")
 if __name__=="__main__":
     while True:
         try:
@@ -113,7 +134,7 @@ if __name__=="__main__":
             if choice == 1:
                 pass
             elif choice==2:
-                pass
+                temp_conversion()
             elif choice==3:
                 mass_conversion()
             elif choice==4:
