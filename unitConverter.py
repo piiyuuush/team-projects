@@ -1,34 +1,27 @@
 # make functions as following, dont use ai chatbot rather ask me in person
 # conversion should be vice versa aswell not just one sided
 # also try to understand the main function written below (if __name__=="__main__":)
-# def length_conversion():
-def convert_length():
- if __name__ == "__main__":
-    while True:
-        print("Piba's Unit Converter!!")
-        choice = input("1. Length\n2. Temperature\n3. Mass\n4. Time\n5. Exit Program\nEnter your choice number: ")
-        if choice == '1':
-            convert_length()   
+# def length_conversion()
 def convert_length():    
     from_unit = input("Enter 'from' unit (cm, m, km) : ")
     to_unit = input("Enter 'to' unit (cm, m, km) : ")
     value = int(input("Enter the value : "))
 
     if from_unit=="cm":
-        value *=100000
-    elif from_unit=="m":
-        value *=1000
-    elif from_unit=="km":
         pass
+    elif from_unit=="m":
+        value *= 100
+    elif from_unit=="km":
+        value *= 100000
     else:
         print("Invalid 'from' unit")
 
     if (to_unit.strip()).lower()=="cm":
-        value/=100000
-    elif (to_unit.strip()).lower()=="m":
-        value/=1000
-    elif (to_unit.strip()).lower()=="km":
         pass
+    elif (to_unit.strip()).lower()=="m":
+        value/=100
+    elif (to_unit.strip()).lower()=="km":
+        value/= 100000
     else:
         print("Invalid 'to' unit")
     print(f"value is {value} {to_unit}\n")
@@ -165,7 +158,7 @@ if __name__=="__main__":
             print("Piba's Unit Converter!!")
             choice = int(input("1. Length\n2. Temperature\n3. Mass\n4. Time\n5. Exit Program\nEnter your Choice number:"))
             if choice == 1:
-                pass
+                convert_length()
             elif choice==2:
                 temp_conversion()
             elif choice==3:
