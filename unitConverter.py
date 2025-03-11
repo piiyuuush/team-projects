@@ -1,7 +1,33 @@
 # make functions as following, dont use ai chatbot rather ask me in person
 # conversion should be vice versa aswell not just one sided
 # also try to understand the main function written below (if __name__=="__main__":)
-# make function for length conversion from : between cm, km, m
+# def length_conversion()
+def convert_length():    
+    from_unit = input("Enter 'from' unit (cm, m, km) : ")
+    to_unit = input("Enter 'to' unit (cm, m, km) : ")
+    value = int(input("Enter the value : "))
+
+    if from_unit=="cm":
+        pass
+    elif from_unit=="m":
+        value *= 100
+    elif from_unit=="km":
+        value *= 100000
+    else:
+        print("Invalid 'from' unit")
+
+    if (to_unit.strip()).lower()=="cm":
+        pass
+    elif (to_unit.strip()).lower()=="m":
+        value/=100
+    elif (to_unit.strip()).lower()=="km":
+        value/= 100000
+    else:
+        print("Invalid 'to' unit")
+    print(f"value is {value} {to_unit}\n")
+
+
+
 # make function for mass conversion from : between g, kg, tons
 def mass_conversion():
     from_unit = input("Enter 'from' unit (milligram, gram, kilogram, tons) : ")
@@ -107,16 +133,37 @@ def time_conversion():
         print("Invalid Choice")
 
 
-# make function for temperature conversion from : between celcius, farhaniet
+# make function for temperature conversion from : between celcius, fahrenheit, kelvin
+def temp_conversion():
+    from_unit = input("Enter 'from' unit (celcius,fahrenheit,kelvin) :")
+    to_unit = input("Enter 'to' unit (celcius,fahrenheit,kelvin) : ")
+    value = int(input("Enter the value : "))
+    if from_unit == "fahrenheit":
+        value = (value - 32) * 5/9
+    elif from_unit == "kelvin":
+        value -= 273.15
+    elif from_unit == "celcius":
+        pass
+    else:
+        print("Invalid 'from' unit.")
+    if (to_unit.strip()).lower()=="fahrenheit":
+        value = (value * 9/5) + 32
+    elif (to_unit.strip()).lower()=="kelvin":
+        value += 273.15
+    elif (to_unit.strip()).lower()=="celcius":
+        pass
+    else:
+        print("Invalid 'to' unit.")
+    print(f"Value is {value} {to_unit} \n ")
 if __name__=="__main__":
     while True:
         try:
             print("Piba's Unit Converter!!")
             choice = int(input("1. Length\n2. Temperature\n3. Mass\n4. Time\n5. Exit Program\nEnter your Choice number:"))
             if choice == 1:
-                pass
+                convert_length()
             elif choice==2:
-                pass
+                temp_conversion()
             elif choice==3:
                 mass_conversion()
             elif choice==4:
