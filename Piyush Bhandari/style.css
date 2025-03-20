@@ -1,0 +1,150 @@
+#para-tag2{
+    color:purple;
+}
+
+.boxes{
+    border: 5px solid;
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+#box1{
+    background: greenyellow;
+    border-color: blue;
+}
+#box2{
+    background: pink;
+    border-color: purple;
+}
+#box3{
+    background: yellow;
+    border-color: orange;
+}
+
+.boxes:hover{
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.parent-division{
+    border: 5px solid greenyellow;
+    padding: 5px;
+}
+
+.child-div{
+    border: 5px solid blue;
+    padding: 5px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+#box-a{
+    height: 6rem;
+}
+#box-b{
+    width: 8rem;
+}
+#box-c{
+    width: 8rem;
+    height: 3rem;
+}
+
+
+/* Block */
+.block-type {
+    display: block;
+    background: lightblue;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Inline */
+.inline-type {
+    display: inline;
+    background: lightgreen;
+    padding: 5px;
+}
+
+/* Inline-Block */
+.inline-block-type {
+    display: inline-block;
+    background: lightcoral;
+    padding: 10px;
+    margin: 5px;
+    width: 100px;
+    text-align: center;
+}
+
+/* Flex */
+.flex-type-parent {
+    display: flex;
+    gap: 10px;
+    background: lightgoldenrodyellow;
+    padding: 10px;
+}
+
+.flex-type {
+    background: lightskyblue;
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+}
+
+/* Grid */
+.grid-type-parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    background: lavender;
+    padding: 10px;
+}
+
+.grid-type {
+    background: thistle;
+    padding: 10px;
+    text-align: center;
+}
+
+/* None */
+.none-type {
+    display: none;
+}
+
+/* Table */
+.table-type {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    background: lightgray;
+}
+
+.table-row-type {
+    display: table-row;
+}
+
+.table-cell-type {
+    display: table-cell;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.contents-type-parent {
+    background: lightgray;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.contents-type {
+    display: contents;
+    background: lightblue;
+    padding: 10px; 
+}
+
+.contents-type p {
+    background: lightcoral;
+    padding: 5px;
+    margin: 5px 0;
+}

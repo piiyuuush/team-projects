@@ -1,0 +1,138 @@
+<!-- Selectors (class, id, pseudo-classes)
+Box Model (margin, padding, border, width, height)
+Display (block, inline, inline-block, flex, grid) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elements</title>
+    <style>
+        #para-tag1{
+            color:blue;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1><b>CSS Tutorial</b></h1>
+   <hr>
+   <h2>Inline CSS</h2>
+   <p style="color:red">In this paragraph, I've used inline css to color the font red</p>
+   <hr>
+   <h2>Internal CSS</h2>
+   <p id="para-tag1">In this paragraph, I've used internal css to color the font blue [id = para-tag1]</p>
+   <hr>
+   <h2>External CSS</h2>
+   <p id="para-tag2">In this paragraph, I've used external css to color the font purple [id = para-tag2][filename = style.css]</p>
+   <p>We prefer external css cause it is easy to manage and keeps everything neat and clean</p>
+   <hr>
+   <h2>Selectors in css [class, id, pseudo-classes]</h2>
+   <p>Do the following to get an idea of different types of selectors : </p>
+   <ol>
+    <li>make 3 div container</li>
+    <li>give them 3 different id called box1, box2, box3</li>
+    <li>also give them a same class called 'boxes'</li>
+    <li>give them equal border size, text align center, padding 8px, margin-bottom 8px using class</li>
+    <li>give them different border and bg color using their respective ids</li>
+    <li>first read about pseudo-classes, then come back</li>
+    <li>alr use hover psudo-class on boxes class to make the font color red and cursor as a pointer and text in bold using css though</li>
+   </ol>
+   <div id="box1" class="boxes">BOX 1</div>
+   <div id="box2" class="boxes">BOX 2</div>
+   <div id="box3" class="boxes">BOX 3</div>
+   <hr>
+   <h2>Box model</h2>
+   <p>In this section, we will learn Box Model (margin, padding, border, width, height)</p>
+   <ol>
+    <li>make a parent div and then make 3 child div containers in it.</li>
+    <li>give them respective classes and id</li>
+    <li>give padding to parent div of 5px</li>
+    <li>give all child boxes padding of 5px, margin left of 15px and margin bottom of 15px</li>
+    <li>give height of 2rem to box A</li>
+    <li>give width of 8rem to box B</li>
+    <li>give width of 8 rem and height of 3 rem to box C</li>
+   </ol>
+   <div class="parent-division"><h3>This parent div has padding of 5px</h3>
+    <div class="child-div" id="box-a">Box A <br> height of 2rem</div>
+    <div class="child-div" id="box-b">Box B <br>width of 8rem</div>
+    <div class="child-div" id="box-c">Box C <br> width of 8rem <br> height of 3rem</div>
+   </div>
+   <hr>
+   <h2>Display Property</h2>
+   <p>In this section, we will learn Display (block, inline, inline-block, flex, grid)</p>
+   <ol>
+    <li><b>"display : block" :</b>Full-width block-level element.</li>
+    <li><b>"display : inline" :</b>No new line, width fits content.</li>
+    <li><b>"display : inline-block" :</b>Like inline but allows setting width/height.</li>
+    <li><b>"display : none" :</b>Hides the element (no space taken).</li>
+    <li><b>"display : flex" :</b>Enables Flexbox layout.</li>
+    <li><b>"display : grid" :</b>Enables Grid layout.</li>
+    <li><b>"display : table" :</b>Behaves like an HTML table.</li>
+    <li><b>"display : contents" :</b>Only child elements are rendered.</li>
+    <li><b>"display : inherit" :</b>inherits parent's property</li>
+   </ol>
+   
+   <div class="block-type">Block Element</div>
+   <hr>
+
+    <!-- Inline -->
+    <span class="inline-type">Inline Element 1</span>
+    <span class="inline-type">Inline Element 2</span>
+
+    <!-- Inline-Block -->
+    <div class="inline-block-type">Inline-Block 1</div>
+    <div class="inline-block-type">Inline-Block 2</div>
+    <hr>
+
+    <!-- Flex -->
+    <div class="flex-type-parent">
+        <div class="flex-type">Flex Item 1</div>
+        <div class="flex-type">Flex Item 2</div>
+    </div>
+    <hr>
+
+    <!-- Grid -->
+    <div class="grid-type-parent">
+        <div class="grid-type">Grid Item 1</div>
+        <div class="grid-type">Grid Item 2</div>
+    </div>
+    <hr>
+
+    <!-- None -->
+    <div class="none-type">This is hidden</div>
+    <hr>
+
+    <!-- Table -->
+    <div class="table-type">
+        <div class="table-row-type">
+            <div class="table-cell-type">Cell 1</div>
+            <div class="table-cell-type">Cell 2</div>
+        </div>
+        <div class="table-row-type">
+            <div class="table-cell-type">Cell 3</div>
+            <div class="table-cell-type">Cell 4</div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- contents -->
+    <div class="contents-type-parent">
+        <div class="contents-type">
+            <p>Child 1</p>
+            <p>Child 2</p>
+        </div>
+        <p>Sibling Element</p>
+    </div>
+    <hr>
+    <P>HTML tags have a default display property usually display block. So it is used to change that behaviour using css. Only try to understand how these works the only necessary ones are as follows:</P>
+    <ol>
+        <li><h3>Block</h3></li>
+        <li><h3>inline</h3></li>
+        <li><h3>None</h3></li>
+        <li><h3>grid</h3></li>
+        <li><h3>Flex [most important]</h3></li>
+    </ol>
+</body>
+</html>
