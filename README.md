@@ -78,20 +78,6 @@ Special thanks to all contributors who participated in building different module
 
 ---
 
-## Project Structure
-
-```text
-team-project/
-│
-├── main.py
-├── Length Conversion Module
-├── Mass Conversion Module
-├── Temperature Conversion Module
-└── Time Conversion Module
-```
-
----
-
 ## How to Run
 
 1. Clone the repository
@@ -126,16 +112,6 @@ Piba's Unit Converter!!
 
 ---
 
-## Future Improvements
-
-* Add more unit categories
-* Improve input validation
-* Create a graphical user interface (GUI)
-* Support decimal values across all conversions
-* Refactor conversion logic for better maintainability
-* Add automated tests
-
----
 
 ## Purpose
 
